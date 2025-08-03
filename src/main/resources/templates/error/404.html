@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Dragon Lost</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .dragon-img {
+            margin-top: 30px;
+            max-width: 400px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        a {
+            color: #fff;
+            padding: 10px 20px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! The dragon flew the wrong way 🐉</p>
+    <img class="dragon-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Dragon" />
+    <br>
+</body>
+</html>
